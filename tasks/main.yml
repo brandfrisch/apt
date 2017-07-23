@@ -1,0 +1,24 @@
+---
+# tasks file for apt
+
+- name: Install ansible apt requirements
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ apt_packages }}"
+    - "{{ apt_additional_packages }}"
+  tags:
+    - package
+    - apt
+
+- name: Set apt configuration
+  template:
+    src: "{{ item }}"
+    dest: "/etc/apt/apt.conf.d/{{ item | basename | replace('.j2', '') }}"
+  with_items:
+    - "{{ apt_config_files }}"
+    - "{{ apt_additional_config_files }}"
+  tags:
+    - config
+    - apt

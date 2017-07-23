@@ -1,0 +1,19 @@
+---
+# defaults file for apt
+apt_unattended_upgrades_mail_address: root
+
+apt_packages:
+  - unattended-upgrades
+  - python-apt
+
+apt_additional_packages: []
+
+apt_config_files:
+  - 02periodic.j2
+  - 10general.j2
+  - 50unattended-upgrades.j2
+
+apt_additional_config_files: []
+
+# do not automatically update these packages
+apt_unattended_blacklist: []
