@@ -1,4 +1,4 @@
-apt [![Build Status](https://travis-ci.org/brandfrisch/apt.svg?branch=master)](https://travis-ci.org/brandfrisch/apt)
+apt
 =========
 
 This is a rule to setup apt on a unix system
