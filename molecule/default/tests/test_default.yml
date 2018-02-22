@@ -1,0 +1,10 @@
+---
+package:
+  python-apt:
+    installed: true
+  unattended-upgrades:
+    installed: true
+service:
+  unattended-upgrades:
+    enabled: true
+    running: true
