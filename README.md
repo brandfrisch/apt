@@ -1,4 +1,4 @@
-apt
+ansible-apt
 =========
 
 This is a rule to setup apt on a unix system
@@ -44,4 +44,4 @@ License and Author
 
 Author:: [Alexander Jäger](https://github.com/lxhunter)
 
-Brandfrisch Copyright 2018
+The-Fittest GmbH Copyright 2020

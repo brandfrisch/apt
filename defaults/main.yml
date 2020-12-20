@@ -4,7 +4,8 @@ apt_unattended_upgrades_mail_address: root
 
 apt_packages:
   - unattended-upgrades
-  - python-apt
+  - apt-listchanges
+  - python3-apt
 
 apt_additional_packages: []
 

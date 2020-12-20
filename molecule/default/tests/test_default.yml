@@ -1,6 +1,6 @@
 ---
 package:
-  python-apt:
+  python3-apt:
     installed: true
   unattended-upgrades:
     installed: true
