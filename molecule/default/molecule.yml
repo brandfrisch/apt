@@ -5,7 +5,7 @@ driver:
   name: docker
 platforms:
   - name: ansible-apt-ubuntu-18.04
-    image: brandfrisch/ubuntu-18.04:latest
+    image: fittest/ubuntu-18.04:latest
     pre_build_image: true
   - name: ansible-apt-ubuntu-20.04
     image: fittest/ubuntu-20.04:latest
