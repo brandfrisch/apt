@@ -31,10 +31,12 @@ jobs:
           python -m pip install -r requirements.txt
         working-directory: "${{ github.repository }}"
 
-      - name: list directory
-        run: ls -al
-        working-directory: "${{ github.repository }}"
-
       - name: Test with molecule
         run: molecule test
         working-directory: "${{ github.repository }}"
+
+      - name: Bump version and push tag
+        uses: hennejg/github-tag-action@v4.1.jh1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          dry_run: true
