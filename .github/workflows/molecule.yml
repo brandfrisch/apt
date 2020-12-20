@@ -27,7 +27,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get install git -yq
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
         working-directory: "${{ github.repository }}"
@@ -42,6 +41,7 @@ jobs:
         with:
           github-token: ${{ secrets.github_token }}
           output-file: "false"
+          path: "${{ github.repository }}"
 
       - name: Create Release
         uses: actions/create-release@v1
